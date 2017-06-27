@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Willingness to Wait",
+        "exp_id": "willingness_to_wait",
+        "cognitive_atlas_task_id": "trm_569989ef8cff4",
+        "template":"jspsych",
+        "run": [
+                "static/js/jspsych/jspsych.js",
+                "static/js/jspsych/plugins/jspsych-text.js",
+                "static/js/jspsych/poldrack_plugins/jspsych-poldrack-text.js",
+                "static/js/jspsych/poldrack_plugins/jspsych-poldrack-instructions.js",
+                "static/js/jspsych/poldrack_plugins/jspsych-attention-check.js",
+                "static/js/jspsych/poldrack_plugins/jspsych-poldrack-single-stim.js",
+                "static/js/jspsych/plugins/jspsych-survey-text.js",
+                "static/js/utils/poldrack_utils.js",
+                "experiment.js",
+                "static/css/jspsych.css",
+                "static/css/default_style.css",
+                "style.css"
+               ],
+        "contributors": [
+                         "Ian Eisenberg",
+                         "Zeynep Enkavi",
+                         "Patrick Bissett",
+                         "Vanessa Sochat",
+                         "Russell Poldrack"
+                        ], 
+        "time":11,
+        "reference": "http://www.nature.com/neuro/journal/v18/n5/full/nn.3994.html",
+        "publish":"True",
+        "experiment_variables": [{
+                                 "name":"performance_var",
+                                 "type":"bonus",
+                                 "datatype": "numeric",
+                                 "range": [0,1000],
+                                 "description":"Money earned during trial. E(bonus) with perfect performance = 300"
+                                  },
+                                  {
+                                 "name":"credit_var",
+                                 "type":"credit",
+                                 "datatype": "boolean",
+                                 "description":"True if avg_rt > 200"
+                                  }],
+        "deployment_variables":{"jspsych_init":
+                                        {"fullscreen": true,
+                                        "display_element": "getDisplayElement",
+                                        "on_trial_finish": "addID('willingness_to_wait')"}
+                       }
+   }
+]

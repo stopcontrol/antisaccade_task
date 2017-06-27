@@ -1,0 +1,62 @@
+.bottombox {
+  width:35vw;
+  height: 20vw;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-right:-50%;
+  transform: translate(-50%,0%);
+}
+
+.decision-left {
+  width:14vw;
+  height: 20vw;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-right:-50%;
+  transform: translate(-165%,-50%);
+}
+
+
+.decision-right {
+  width:14vw;
+  height: 14vw;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-right:-50%;
+  transform: translate(65%,-50%);
+}
+.centerbox {
+  width:35vw;
+  height: 20vw;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-right:-50%;
+  transform: translate(-50%,-50%);
+}
+
+
+.decision-fb{
+width:200px;
+position: absolute;
+top: 50%;
+left:50%;
+margin-right:-50%;
+transform: translate(-50%, -25%);
+}
+
+img {
+display: block;
+height: 13vw;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+
+.responded {
+  visibility: hidden;
+}

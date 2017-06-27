@@ -1,0 +1,101 @@
+.display_stage {
+    position: fixed;
+    background: black;
+    left: 5vw;
+    top: 2vh;
+    height: 94vh;
+    width: 90vw;
+    border-radius: 15px;
+    border: 1vh solid #D0D0D0;
+    z-index: 0;
+}
+
+.stimBox {
+	width: 20vw;
+	height: 20vw;
+	position:relative;
+	top:50%;
+	left:50%;
+	margin-right:0%;
+	transform: translate(-50%,-50%);
+}
+
+.hierarchicalStim {
+	display: block;
+	height: 20vw;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%); 
+}
+
+.hierarchicalBorder {
+	display: block;
+	height: 22vw;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+
+.hierarchicalPrompt {
+	display: block;
+	height: 22vw;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	z-index: -1;
+}
+
+
+.gridImage {
+	position:absolute;
+	width: 7vw;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%); 
+}
+
+.gridBorder {
+	position:absolute;
+	width: 8.5vw;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%); 
+}
+
+.imgGridBox {
+	position: relative;
+	width: 10vw;
+	height: 10vw;
+	float: left;
+}
+
+.gridBox {
+  width:60vw;
+  height: 30vw;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-right:-50%;
+  transform: translate(-50%,-50%);
+}
+
+
+.instructionBox {
+	position: relative;
+	width: 60vw;
+	height: 10vw;
+	left: 50%;
+	top: 3%;
+	transform: translate(-50%, 0%);
+}
+
+.jspsych-instructions-nav > p {
+  margin-top: 10px;
+}
+
+.display_stage > div, .display_stage > p {
+  color: white;
+}
